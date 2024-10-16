@@ -1,15 +1,16 @@
 {
     "cmake.configureArgs": [
-        "-DVCPKG_TARGET_TRIPLET=",
         "-DVCPKG_APPLOCAL_DEPS=ON",
-        "-DX_VCPKG_APPLOCAL_DEPS_INSTALL=ON"
+        "-DX_VCPKG_APPLOCAL_DEPS_INSTALL=ON",
+        "-DVCPKG_TARGET_TRIPLET=",
+        "-DVCPKG_MANIFEST_MODE=OFF"
     ],
     "vcpkg.general.enable": true,
     "vcpkg.target.hostTriplet": "x64-linux",
     "vcpkg.target.defaultTriplet": "",
     "vcpkg.target.useStaticLib": false,
     "cmake.configureSettings": {
-        "CMAKE_TOOLCHAIN_FILE": "/home/pop-os/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        "CMAKE_TOOLCHAIN_FILE": "/home/zero/.local/vcpkg/scripts/buildsystems/vcpkg.cmake"
     },
     "vcpkg.target.installDependencies": true,
     "vcpkg.target.preferSystemLibs": false,

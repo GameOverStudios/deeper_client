@@ -30,3 +30,54 @@ Abi: 92f9622f75666e312059f2c89d0b172d1f9b4ca5d6c35bbd8f185439e60bbcfa
 Description: OpenSSL is an open source project that provides a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library.
 Status: install ok installed
 
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: cfa330b74ba1d8fde5ed87a957503d1747d00bb86436450917877bfef848e86e
+Description: A compression library
+Status: install ok installed
+
+Package: curl
+Version: 8.10.1
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 28faf5952bd1e8bbe5ac7bbb6e416c7d02ee2bf80fea9f3c0f01b49904d76ef0
+Description: A library for transferring data with URLs
+Default-Features: non-http, ssl
+Status: install ok installed
+
+Package: curl
+Feature: non-http
+Architecture: x64-linux
+Multi-Arch: same
+Description: Enables protocols beyond HTTP/HTTPS/HTTP2
+Status: install ok installed
+
+Package: curl
+Feature: openssl
+Depends: openssl
+Architecture: x64-linux
+Multi-Arch: same
+Description: SSL support (OpenSSL)
+Status: install ok installed
+
+Package: curl
+Feature: ssl
+Architecture: x64-linux
+Multi-Arch: same
+Description: Default SSL backend
+Status: install ok installed
+
+Package: fmt
+Version: 11.0.2
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: b0f7536726b12f7aae8aa3ff59a1f144da7520abc7f783a56755b2ef3126fe1c
+Description: {fmt} is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.
+Status: install ok installed
+

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/deeper_client.dir/deeper_client.cpp.o -o deeper_client  -lfmt::fmt -lcurl::curl 
